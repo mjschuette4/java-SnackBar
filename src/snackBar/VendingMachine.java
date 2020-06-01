@@ -14,11 +14,16 @@ public class VendingMachine {
     }
 
     //Getter functions
+    public int getId() {
+        return id;
+    }
 
-
+    public String getName() {
+        return name;
+    }
 
     //Setter functions
-
-
-
+    public void setName(String name) {
+        this.name = name;
+    }
 }

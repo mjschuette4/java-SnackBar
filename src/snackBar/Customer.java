@@ -9,17 +9,35 @@ public class Customer {
 
     public Customer (String name, double cash) {
         maxId++;
-        
+
         id = maxId;
         this.name = name;
         this.cash = cash;
     }
+    
     //Getter functions
+    public int getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
 
+    public double getCash() {
+        return cash;
+    }
 
     //Setter functions
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void moneyAdd(double moneyAdded) {
+        this.cash = this.cash + moneyAdded;
+    } 
 
-
+    public void moneySubtract(double moneySubtracted) {
+        this.cash = this.cash - moneySubtracted;
+    }
 }

@@ -19,11 +19,52 @@ public class Snack {
         this.machineId = machineId;
     }
     //Getter functions
+    public int getId(){
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
 
+    public int getQuantity() {
+        return quantity;
+    }
 
+    public double getCost() {
+        return cost;
+    }
+
+    public int getMachineId() {
+        return machineId;
+    }
+
+    public double totalCost() {
+        return quantity * cost;
+    }
+    
     //Setter functions
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
+    public void snacksAdd(int amountAdd) {
+        this.quantity = this.quantity + amountAdd;
+    }
 
+    public void snacksReduce(int amountReduce) {
+        this.quantity = this.quantity - amountReduce;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public void setMachineId(int machineId) {
+        this.machineId = machineId;
+    }
 }
